@@ -9,14 +9,14 @@ public class Main {
         Paquete paqueteGrande = new Paquete(300, 100);
         Paquete paqueteFragil = new Paquete(10, 5, true);
 
-        MedioTransporte[] transportes = {
+        MedioDeTransporte[] transportes = {
             new Bicicleta(),
             new Motito(),
             new Pickup()
         };
 
         System.out.println("=== Demostración de transporte de paquetes ===");
-        for (MedioTransporte transporte : transportes) {
+        for (MedioDeTransporte transporte : transportes) {
             probarTransporte(transporte, paquetePequeno);
             probarTransporte(transporte, paqueteMediano);
             probarTransporte(transporte, paqueteGrande);
@@ -25,7 +25,7 @@ public class Main {
         }
     }
 
-    private static void probarTransporte(MedioTransporte transporte, Paquete paquete) {
+    private static void probarTransporte(MedioDeTransporte transporte, Paquete paquete) {
         System.out.printf("%s intentando llevar paquete de %.1f kg a %.1f km: %b%n",
                 transporte.getClass().getSimpleName(),
                 paquete.peso,

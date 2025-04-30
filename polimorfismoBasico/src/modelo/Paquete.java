@@ -4,8 +4,6 @@ public class Paquete {
 	public final double peso;
 	public final double distancia;
 	public final boolean fragil;
-	// Para no tener que usar el get porque puedo verlo pero además no puedo
-	// modificarlo
 
 	public Paquete(double peso, double distancia) {
 		this.peso = peso;

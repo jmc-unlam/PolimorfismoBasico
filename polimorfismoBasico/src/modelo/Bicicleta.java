@@ -1,6 +1,6 @@
 package modelo;
 
-public class Bicicleta extends MedioTransporte {
+public class Bicicleta extends MedioDeTransporte {
 
 	public Bicicleta() {
 		super(5, 1, 1); // Peso 5kg, distancia 1km, 1 paquete

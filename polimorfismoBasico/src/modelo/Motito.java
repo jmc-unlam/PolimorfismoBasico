@@ -1,6 +1,6 @@
 package modelo;
 
-public class Motito extends MedioTransporte {
+public class Motito extends MedioDeTransporte {
 	private static final double IDA_Y_VUELTA = 2;
 
 	private int paquetesTransportados = 0;

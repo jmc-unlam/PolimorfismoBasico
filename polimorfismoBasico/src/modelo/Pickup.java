@@ -1,6 +1,6 @@
 package modelo;
 
-public class Pickup extends MedioTransporte {
+public class Pickup extends MedioDeTransporte {
 
 	private double pesoTransportado = 0;
 
@@ -19,6 +19,7 @@ public class Pickup extends MedioTransporte {
 		return paquete.peso <= (this.pesoMaximo - pesoTransportado);
 	}
 
+	//usa el puedeLlevar de MedioDeTransporte y le agrega una condicion mas
 	@Override
 	public boolean puedeLlevar(Paquete paquete) {
 		return super.puedeLlevar(paquete) && paquete.fragil;

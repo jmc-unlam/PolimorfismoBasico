@@ -1,11 +1,11 @@
 package modelo;
 
-public abstract class MedioTransporte {
+public abstract class MedioDeTransporte {
 	protected final double pesoMaximo;
 	protected final double distanciaMaxima;
 	protected final int paquetesMaximos;
 
-	public MedioTransporte(double pesoMaximo, double distanciaMaxima, int paquetesMaximos) {
+	public MedioDeTransporte(double pesoMaximo, double distanciaMaxima, int paquetesMaximos) {
 		this.pesoMaximo = pesoMaximo;
 		this.distanciaMaxima = distanciaMaxima;
 		this.paquetesMaximos = paquetesMaximos;
